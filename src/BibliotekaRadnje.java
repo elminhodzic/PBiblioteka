@@ -35,6 +35,22 @@ public class BibliotekaRadnje {
 			System.out.println("Uspijesno ste kreirali racun.");
 
 		}
+
+		try {
+
+			File fajlRacuni = new File("Racuni.txt");
+			PrintWriter printanjeRacuni = new PrintWriter(fajlRacuni);
+
+			for (Racun e : listaRacuna) {
+
+				printanjeRacuni.println(e.getBrojRacuna() + " " + e.getIme());
+				System.out.println();
+			}
+			printanjeRacuni.close();
+
+		} catch (Exception ex) {
+			System.out.println("nema fajla:");
+		}
 	}
 
 	public void kreirajKnjigu(int brojKnjige, String imeKnjige) {
@@ -60,6 +76,22 @@ public class BibliotekaRadnje {
 			listaKnjiga.add(knjiga);
 			System.out.println("Uspjesno ste kreirali knjigu.");
 
+		}
+
+		try {
+
+			File fajlKnjiga = new File("Knjige.txt");
+			PrintWriter printanjeKnjiga = new PrintWriter(fajlKnjiga);
+
+			for (Knjige e : listaKnjiga) {
+
+				printanjeKnjiga.println(e.getBrojKnjige() + " " + e.getImeKnjige());
+
+			}
+			printanjeKnjiga.close();
+
+		} catch (Exception ex) {
+			System.out.println("nema fajla:");
 		}
 	}
 

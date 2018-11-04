@@ -1,9 +1,7 @@
-import java.io.Serializable;
 import java.util.Date;
 
 public class Knjige {
 
-	
 	private int brojKnjige;
 	private String imeKnjige;
 	private boolean status;
@@ -12,15 +10,12 @@ public class Knjige {
 	Knjige() {
 
 	}
-	
 
 	public Knjige(int brojKnjige, String imeKnjige) {
 		this.brojKnjige = brojKnjige;
 		this.imeKnjige = imeKnjige;
 
 	}
-	
-	
 
 	public Knjige(int brojKnjige, String imeKnjige, boolean status) {
 		this(brojKnjige, imeKnjige);
@@ -63,7 +58,6 @@ public class Knjige {
 	public String toString() {
 		return "Knjiga [brojKnjige=" + brojKnjige + ", imeKnjige=" + imeKnjige + ", status=" + status
 				+ ", datumPosudnjivanja=" + datumPosudnjivanja + "]";
-		
-		
+
 	}
 }

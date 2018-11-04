@@ -1,8 +1,7 @@
 import java.util.Date;
 
 public class Racun {
-	
-	
+
 	private int brojRacuna;
 	private String ime;
 	private int brojKnjige;
@@ -46,9 +45,9 @@ public class Racun {
 	public void setBrojKnjige(int brojKnjiga) {
 		this.brojKnjige = brojKnjiga;
 	}
-	
-	public String racuni () {
-		
+
+	public String racuni() {
+
 		return brojRacuna + " " + ime + "\n";
 	}
 

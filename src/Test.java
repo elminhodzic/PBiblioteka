@@ -1,4 +1,3 @@
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -67,7 +66,7 @@ public class Test {
 
 				if (opcija == 4) {
 
-					boolean uspjesno = false;
+					boolean uspjesno = true;
 
 					while (uspjesno)
 						try {
